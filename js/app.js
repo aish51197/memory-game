@@ -230,13 +230,13 @@ function starScore(selector) {
 	}
 	//if user completes the game in more than 12 moves and less than or 20 moves, he gets two stars
 	else if (moveCounter > 12 && moveCounter <= 20) {
-		stars[2].firstElementChild.style.display = 'none';
+		stars[2].firstElementChild.style.color = 'white';
 		comment.textContent = 'Good!';
 	} else {
 		//otherwise he gets one star
-		stars[1].firstElementChild.style.display = 'none';
-		stars[2].firstElementChild.style.display = 'none';
-		comment.textContent = 'You can do it better';
+		stars[1].firstElementChild.style.color = 'white';
+		stars[2].firstElementChild.style.color = 'white';
+		comment.textContent = 'Well played';
 	}
 }
 //this reset the star rating when a new game starts.
